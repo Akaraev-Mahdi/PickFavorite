@@ -74,9 +74,14 @@ export class TournamentService {
             throw new HttpException('Пользователь не найден', HttpStatus.BAD_REQUEST)
         }
 
-        await this.tournamentsRepository.destroy({
+        const tournament = await this.tournamentsRepository.findOne({
             where: {id: tournamentId, userId: decodeUser.id}
         })
+
+        const imgName = tournament.image
+        await tournament.destroy()
+
+        this.fileService.deleteFile(imgName)
     }
 
     async deletePicture(pictureId: number, tournamentId: number, user: string) {
@@ -92,9 +97,13 @@ export class TournamentService {
             throw new HttpException('Нет доступа', HttpStatus.BAD_REQUEST)
         }
 
-        await this.pictureRepository.destroy({
-            where: {id: pictureId, tournamentId: tournamentId}
-        })
+        const picture = await this.pictureRepository.findOne({
+            where: { id: pictureId, tournamentId: tournamentId }
+        });
+        const imgName = picture.image
+        await picture.destroy()
+
+        this.fileService.deleteFile(imgName)
     }
 
     async tournamentComplited(tournamentId: string){

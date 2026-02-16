@@ -14,4 +14,21 @@ export class FilesService {
         fs.writeFileSync(path.join(filePath, fileName), img.buffer)
         return fileName;
     }
+
+    deleteFile(imgName: string){
+        fs.readdir('../../static', (err, files) => {
+            if (err) throw err;
+
+            const foundFile = files.find(file => file === imgName);
+
+            if (foundFile) {
+                const filePath = path.join('../../static', foundFile);
+                fs.unlink(filePath, (err) => {
+                    if (err) throw err;
+                });
+            } else {
+                console.log('Файл не найден');
+            }
+        });
+    }
 }
