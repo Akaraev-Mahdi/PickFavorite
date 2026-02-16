@@ -1,0 +1,57 @@
+body {
+    font-family: "Kanit", serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px;
+    background-color: #CF2D2D;
+    border-radius: 10px;
+}
+
+.logo {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.profile-icon {
+    width: 43px;
+    height: 43px;
+}
+
+.profile {
+    cursor: pointer;
+    width: 43px;
+    height: 43px;
+}
+
+.dashboard {
+    box-shadow: 0px 1px 15px #D9D9D9;
+    position: absolute;
+    top: 70px;
+    right: 40px;
+    padding: 15px 20px;
+    z-index: 2;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+.dashboard-content {
+    display: grid;
+}
+
+.dashboard a {
+    text-decoration: none;
+    color: black;
+}

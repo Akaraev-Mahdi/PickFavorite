@@ -1,0 +1,55 @@
+.filters button {
+    color: #4E4B4B;
+    font-weight: bold;
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.tournament-name {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.results hr {
+    margin-top: 25px;
+}
+
+.voiter {
+    display: flex;
+    margin-top: 25px;
+    gap: 20px;
+}
+
+.voiter span {
+    margin-top: 180px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.voiter-name {
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.result-tournament-img {
+    margin-top: 36px;
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+}
+
+.description {
+    width: 390px;
+    min-height: 160px;
+    border-radius: 10px;
+    margin-top: 36px;
+    padding: 5px 15px;
+    background-color: #D9D9D9;
+}

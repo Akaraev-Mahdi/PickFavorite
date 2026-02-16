@@ -1,0 +1,40 @@
+.container {
+    padding: 40px 30px;
+}
+
+.versus-place {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+.picture {
+    width: 300px;
+    box-shadow: 0px 5px 3px #D9D9D9;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.picture-img {
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+}
+
+.picture-info {
+    padding: 5px 10px;
+}
+
+.picture-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.versus-text {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 100px;
+    cursor: default;
+}

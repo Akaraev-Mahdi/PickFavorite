@@ -1,0 +1,174 @@
+.tournament-place {
+    display: flex;
+    gap: 40px;
+}
+
+.create-place {
+    display: grid;
+    width: 270px;
+}
+
+.place-name {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.tournament-input {
+    outline: none;
+    background-color: #ffff;
+    border: 1px solid #CF2D2D;
+    padding-left: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    height: 50px;
+    width: 270px;
+}
+
+.tournament-btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tournament-btns button {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #CF2D2D;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 25px;
+    cursor: pointer;
+}
+
+.file-change-input {
+    display: none;
+}
+
+.file-change-input-text {
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #CF2D2D;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    padding: 15px 25px;
+    cursor: pointer;
+}
+
+.error-message {
+    background-color: bisque;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    width: 250px;
+    font-family: Arial, sans-serif;
+}
+
+.success-message {
+    background-color: #21c108;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    width: 250px;
+    font-family: Arial, sans-serif;
+}
+
+.tournament-preview {
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
+    margin-top: 50px;
+    background-color: #D9D9D9;
+}
+
+.voiter-place {
+    display: flex;
+    margin-top: 40px;
+    gap: 40px;
+}
+
+.tournament-completed {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #CF2D2D;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 25px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.existing-voters-place {
+    margin-top: 40px;
+}
+
+.existing-voters-place hr {
+    margin-top: 25px;
+}
+
+.voiter {
+    display: flex;
+    margin-top: 25px;
+    gap: 20px;
+}
+
+.create-voiter-name {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.voiter-img {
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+}
+
+.description {
+    width: 390px;
+    min-height: 160px;
+    border-radius: 10px;
+    margin-top: 36px;
+    padding: 5px 15px;
+    background-color: #D9D9D9;
+}
+
+.create-message {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    font-family: Arial, sans-serif;
+}
+
+.create-message-border {
+    text-align: center;
+}
+
+.create-message-btn {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #CF2D2D;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 25px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.cancel-btn {
+    padding: 10px 10px;
+    margin-top: 174px;
+    height: 22px;
+    box-shadow: 0px 1px 15px #D9D9D9;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cancel-img {
+    width: 22px;
+    height: 22px;
+}
