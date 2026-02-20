@@ -148,7 +148,16 @@ export class TournamentService {
             throw new HttpException('Пользователь не найден', HttpStatus.BAD_REQUEST)
         }
 
-        await this.tournamentsRepository.destroy({where: {userId: decodeUser.id, completed: false}})
+        const tournament = await this.tournamentsRepository.findOne({
+            where: {userId: decodeUser.id, completed: false}
+        })
+
+        if(tournament){
+            const imgName = tournament.image
+            await tournament.destroy()
+
+            this.fileService.deleteFile(imgName)
+        }
     }
 
     async addScore(dto: AddScoreDto, user: string){

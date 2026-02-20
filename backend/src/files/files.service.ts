@@ -15,20 +15,20 @@ export class FilesService {
         return fileName;
     }
 
-    deleteFile(imgName: string){
-        fs.readdir('../../static', (err, files) => {
-            if (err) throw err;
+    deleteFile(imgName: string) {
 
-            const foundFile = files.find(file => file === imgName);
+        const staticPath = path.resolve(process.cwd(), 'static')
+        const filePath = path.join(staticPath, imgName)
 
-            if (foundFile) {
-                const filePath = path.join('../../static', foundFile);
-                fs.unlink(filePath, (err) => {
-                    if (err) throw err;
-                });
-            } else {
-                console.log('Файл не найден');
-            }
-        });
+        if (fs.existsSync(filePath)) {
+            fs.unlink(filePath, (err) => {
+                if (err) {
+                    console.error('Ошибка при удалении файла:', err)
+                    return
+                }
+            })
+        } else {
+            console.log('Файл не найден по пути:', filePath)
+        }
     }
 }
