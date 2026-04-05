@@ -1,12 +1,5 @@
 # 🏆 Tournament Bracket System
 
-<p align="center">
-  <img src="https://shields.io" alt="NestJS">
-  <img src="https://shields.io" alt="React">
-  <img src="https://shields.io" alt="PostgreSQL">
-  <img src="https://shields.io" alt="Docker">
-</p>
-
 ---
 
 ## 📖 Описание проекта
@@ -32,30 +25,39 @@ npm install
 Создайте файл .env на основе примера и настройте доступы:
 bash
 cp .env.example .env
+```
 
-2️⃣ Запуск базы данных
+---
+
+### 2️⃣ Запуск базы данных
 Запустите Docker-контейнер с PostgreSQL:
-bash
+```bash
 docker-compose up -d
+```
 
-3️⃣ Миграции и Тестовые данные
+---
+
+### 3️⃣ Миграции и Тестовые данные
 Создайте структуру таблиц и наполните базу через сидеры:
-bash
+```bash
 npx sequelize-cli db:migrate
 npx sequelize-cli db:seed:all
+```
 
-4️⃣ Запуск приложений
+### 4️⃣ Запуск приложений
 Backend:
-bash
+```bash
 npm run start:dev
+```
 
 Frontend:
-bash
+```bash
 cd ../frontend
 npm install
 npm run dev
+```
 
-🔐 Тестовый аккаунт
+## 🔐 Тестовый аккаунт
 Вы можете использовать готовый аккаунт для входа:
 Email: test@example.com
 Password: password123
