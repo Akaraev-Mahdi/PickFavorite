@@ -1,4 +1,12 @@
 # 🏆 Tournament Bracket System
+
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/NestJS.svg" alt="i" width="100" align="middle"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="i" width="100" align="middle"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Logo_PostgreSQL.png" alt="i" width="100" align="middle"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Docker_Logo.png" alt="i" width="180" align="middle"/>
+</p>
+
 ---
 
 ## 📖 Описание проекта
@@ -22,9 +30,10 @@
 ```bash
 cd backend
 npm install
+```
 
 Создайте файл .env на основе примера и настройте доступы:
-bash
+```bash
 cp .env.example .env
 ```
 
